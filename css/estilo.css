@@ -11,14 +11,21 @@
 .carousel {
     display: flex;
     scroll-snap-type: x mandatory;
-    overflow-x: scroll;
+    text-align: center;
+    overflow: hidden;
     scroll-behavior: smooth;
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 0 1.25rem;
   }
   
   .carousel__item {
-    width: 100%;
-    flex-shrink: 0;
-    scroll-snap-align: start;
+  
+    width: auto;
+    height: auto;
+    margin: auto; 
+    display: block;
+    scroll-snap-align: center;
   }
   
   .carousel__image {
